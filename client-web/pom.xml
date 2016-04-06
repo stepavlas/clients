@@ -30,14 +30,11 @@
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-      <version>4.2.5.RELEASE</version>
+      <artifactId>spring-core</artifactId>
     </dependency>
     <dependency>
       <groupId>org.apache.tomcat</groupId>
       <artifactId>jasper</artifactId>
-      <version>6.0.44</version>
-      <scope>runtime</scope>
     </dependency>
     <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
@@ -54,13 +51,10 @@
     <dependency>
        <groupId>jstl</groupId>
        <artifactId>jstl</artifactId>
-       <version>1.2</version>
     </dependency>
     <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>javax.servlet-api</artifactId>
-        <version>3.1.0</version>
-        <scope>provided</scope>
     </dependency>
   </dependencies>
 </project>
