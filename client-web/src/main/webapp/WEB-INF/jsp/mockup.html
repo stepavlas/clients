@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <title>rest page</title>
+</head>
+<body>
+
+<form id="addUser" action="/add" method="post">
+    <fieldset>
+        <legend>add client</legend>
+        <label for="firstName">first name</label>
+        <input id="firstName" name="firstName" size="30"/>
+        <label for="lastName">last name</label>
+        <input id="lastName" name="lastName" size="30"/>
+        <label for="gender">sex</label>
+        <select id="gender" name="gender">
+            <option value="M">male</option>
+            <option value="F">female</option>
+        </select>
+        <label for="country">country</label>
+        <input id="country" name="country" size="30">
+        <label for="city">city</label>
+        <input id="city" name="city" size="30">
+        <input class="button" type="submit" value="add"/>
+    </fieldset>
+</form>
+</body>
+</html>
