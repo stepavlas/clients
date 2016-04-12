@@ -8,8 +8,20 @@
 
     <servlet-mapping>>
         <servlet-name>clients</servlet-name>
-        <url-pattern>/*</url-pattern>
+        <url-pattern>/clients/*</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>clientService</servlet-name>
+        <servlet-class>com.sun.xml.ws.transport.http.servlet.WSSpringServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>>
+        <servlet-name>clientService</servlet-name>
+        <url-pattern>/clientService</url-pattern>
+    </servlet-mapping>
+
 
     <servlet>
         <servlet-name>jsp</servlet-name>

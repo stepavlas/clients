@@ -21,4 +21,10 @@
               <property name="prefix" value="/WEB-INF/jsp/"/>
               <property name="suffix" value=".jsp"/>
        </bean>
+
+    <bean class="org.springframework.remoting.jaxws.SimpleJaxWsServiceExporter"/>
+
+    <bean id="clientEndpoint" class="com.stepavlas.restApp.ClientEndpoint">
+        <property name="service" ref="clientService"/>
+    </bean>
 </beans>
