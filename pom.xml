@@ -19,6 +19,7 @@
         <servlet.ver>3.1.0</servlet.ver>
         <jstl.ver>1.2</jstl.ver>
         <jasper.ver>6.0.44</jasper.ver>
+        <metro.ver>1.9</metro.ver>
 
     </properties>
 
@@ -88,6 +89,12 @@
               <artifactId>jasper</artifactId>
               <version>${jasper.ver}</version>
               <scope>runtime</scope>
+           </dependency>
+           <dependency>
+               <groupId>org.jvnet.jax-ws-commons.spring</groupId>
+               <artifactId>jaxws-spring</artifactId>
+               <version>${metro.ver}</version>
+               <scope>runtime</scope>
            </dependency>
          </dependencies>
    </dependencyManagement>
