@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -20,8 +21,8 @@ public class ClientEndpoint {
         this.service = service;
     }
 
-    public List<Client> getAll(Client client) {
-        return service.getAll(client);
+    public List<Client> getAll() {
+        return service.getAll();
     }
 
 }

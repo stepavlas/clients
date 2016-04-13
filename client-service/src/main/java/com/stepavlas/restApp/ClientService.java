@@ -33,7 +33,7 @@ public class ClientService {
         }
     }
 
-    public List<Client> getAll(Client client){
+    public List<Client> getAll(){
         Map<Long, Client> clientsMap = clientDao.getClients();
         List<Client> clients = new ArrayList<>(clientsMap.values());
         return clients;
